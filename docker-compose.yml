@@ -1,5 +1,5 @@
-version: "3" #docker-compose version
-services: #the containers in the network
+version: "3"
+services:
 
   endpoint:
     build: ./src
@@ -8,8 +8,8 @@ services: #the containers in the network
     depends_on:
         -  postgres
   postgres:
-    image: postgres #if using an existing image
+    image: postgres
     environment:
-      POSTGRES_PASSWORD: "1234" # specify individual env variables.
+      POSTGRES_PASSWORD: "1234"
     ports:
         - 5432:5432
