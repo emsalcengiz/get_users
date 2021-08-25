@@ -6,7 +6,7 @@ from sqlalchemy import func, desc, and_
 from init import *
 
 
-DB_URL = 'postgresql://postgres:1234@postgres:5432/postgres'
+DB_URL = 'postgresql://postgres:****@postgres:5432/postgres'
 app = Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = DB_URL
